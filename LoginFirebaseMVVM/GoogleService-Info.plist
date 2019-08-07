@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>609864459556-fq3p7j027h4jk7fm358b78i6l8cehqju.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.609864459556-fq3p7j027h4jk7fm358b78i6l8cehqju</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDc-7p0DRDji8ZKO3zzS7oXp88L_YTpzr4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>609864459556</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>test.test.LoginFirebaseMVVM</string>
+	<key>PROJECT_ID</key>
+	<string>database-denemesi</string>
+	<key>STORAGE_BUCKET</key>
+	<string>database-denemesi.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:609864459556:ios:cb94a4b4d920e561</string>
+	<key>DATABASE_URL</key>
+	<string>https://database-denemesi.firebaseio.com</string>
+</dict>
+</plist>
