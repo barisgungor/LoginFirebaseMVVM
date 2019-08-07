@@ -29,9 +29,6 @@
 }
 */
 
-- (IBAction)textFieldAction:(id)sender {
-    
-}
 - (IBAction)ClickLogin:(id)sender {
 }
 @end
