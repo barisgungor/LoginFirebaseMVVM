@@ -12,7 +12,6 @@
 
 @interface UserViewModel ()
 
-@property (nonatomic) FIRDatabaseReference *userReference;
 @property (nonatomic) UserHelper *helper;
 @property (nonatomic) UserModel *model;
 
@@ -43,34 +42,6 @@
     return self;
 }
 
--(BOOL) userLoginResponse {
-    return self.success;
-}
 
--(void) fetchUserLoginResponse:(BOOL)success {
-    self.success = success;
-}
-
--(void)fetchAndCheckUserData {
-    
-    [self.userReference observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-        if (snapshot.children > 0) {
-            for (FIRDataSnapshot *child in snapshot.children) {
-                NSDictionary *savedUser = [child value];
-                if ([savedUser objectForKey:@"username"] == self.usernameText && [savedUser objectForKey:@"password"] == self.passwordText) {
-                    self.success = YES;
-//                    [self fetchUserLoginResponse:self.success];
-                    [[NSNotificationCenter alloc] postNotificationName:@"ShowLoginPage" object:nil];
-                }
-            }
-            NSLog(@"TEST Succes => %d",self.success);
-        }
-    }];
-    
-}
-
--(UserModel *)user {
-    return self.model;
-}
 
 @end

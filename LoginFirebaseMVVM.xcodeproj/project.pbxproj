@@ -21,6 +21,7 @@
 		188DA19822FAFBB9003974C5 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DA19722FAFBB9003974C5 /* UserModel.m */; };
 		188DA19B22FB01F5003974C5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DA19A22FB01F5003974C5 /* HomeViewController.m */; };
 		18ED9BD82305943C009CFF15 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BD72305943C009CFF15 /* RegisterViewController.m */; };
+		18ED9BDB2305989E009CFF15 /* RegisterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED9BDA2305989E009CFF15 /* RegisterHelper.m */; };
 		18F1967922FB133C0084EB0D /* UserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1967822FB133C0084EB0D /* UserHelper.m */; };
 		5E5188FBA39DFE98944A7578 /* Pods_LoginFirebaseMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7E33CFFBAE1CB73092F4CA /* Pods_LoginFirebaseMVVM.framework */; };
 		DEE460EEC81C9828DBC3B501 /* Pods_LoginFirebaseMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B746A5186A2548263D72C60 /* Pods_LoginFirebaseMVVMUITests.framework */; };
@@ -69,6 +70,8 @@
 		188DA19A22FB01F5003974C5 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		18ED9BD62305943C009CFF15 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		18ED9BD72305943C009CFF15 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		18ED9BD92305989E009CFF15 /* RegisterHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterHelper.h; sourceTree = "<group>"; };
+		18ED9BDA2305989E009CFF15 /* RegisterHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterHelper.m; sourceTree = "<group>"; };
 		18F1967722FB133C0084EB0D /* UserHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHelper.h; sourceTree = "<group>"; };
 		18F1967822FB133C0084EB0D /* UserHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserHelper.m; sourceTree = "<group>"; };
 		1F33CBB3AC7EC3EF59180617 /* Pods-LoginFirebaseMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebaseMVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-LoginFirebaseMVVMUITests/Pods-LoginFirebaseMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 			children = (
 				18F1967722FB133C0084EB0D /* UserHelper.h */,
 				18F1967822FB133C0084EB0D /* UserHelper.m */,
+				18ED9BD92305989E009CFF15 /* RegisterHelper.h */,
+				18ED9BDA2305989E009CFF15 /* RegisterHelper.m */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				182C603022FAF5EE00B34763 /* LoginViewController.m in Sources */,
+				18ED9BDB2305989E009CFF15 /* RegisterHelper.m in Sources */,
 				188DA19822FAFBB9003974C5 /* UserModel.m in Sources */,
 				188DA19522FAFBAC003974C5 /* UserViewModel.m in Sources */,
 				18F1967922FB133C0084EB0D /* UserHelper.m in Sources */,

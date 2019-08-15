@@ -14,11 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UserViewModel : NSObject
 
 - (instancetype)initWithUsernameText:(NSString *)usernameText passwordText:(NSString *)passwordText;
--(void)fetchAndCheckUserData;
--(NSString *)usernameText;
--(NSString *)passwordText;
--(BOOL) userLoginResponse;
--(UserModel *)user;
+
 
 @property (nonatomic) NSString *usernameText;
 @property (nonatomic) NSString *passwordText;
