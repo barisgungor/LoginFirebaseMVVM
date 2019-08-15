@@ -19,6 +19,8 @@
 		182C603222FAF7A200B34763 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 182C603122FAF7A200B34763 /* GoogleService-Info.plist */; };
 		188DA19522FAFBAC003974C5 /* UserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DA19422FAFBAC003974C5 /* UserViewModel.m */; };
 		188DA19822FAFBB9003974C5 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DA19722FAFBB9003974C5 /* UserModel.m */; };
+		188DA19B22FB01F5003974C5 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DA19A22FB01F5003974C5 /* HomeViewController.m */; };
+		18F1967922FB133C0084EB0D /* UserHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F1967822FB133C0084EB0D /* UserHelper.m */; };
 		5E5188FBA39DFE98944A7578 /* Pods_LoginFirebaseMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7E33CFFBAE1CB73092F4CA /* Pods_LoginFirebaseMVVM.framework */; };
 		DEE460EEC81C9828DBC3B501 /* Pods_LoginFirebaseMVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B746A5186A2548263D72C60 /* Pods_LoginFirebaseMVVMUITests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,10 @@
 		188DA19422FAFBAC003974C5 /* UserViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewModel.m; sourceTree = "<group>"; };
 		188DA19622FAFBB9003974C5 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		188DA19722FAFBB9003974C5 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		188DA19922FB01F5003974C5 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		188DA19A22FB01F5003974C5 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		18F1967722FB133C0084EB0D /* UserHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHelper.h; sourceTree = "<group>"; };
+		18F1967822FB133C0084EB0D /* UserHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserHelper.m; sourceTree = "<group>"; };
 		1F33CBB3AC7EC3EF59180617 /* Pods-LoginFirebaseMVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebaseMVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-LoginFirebaseMVVMUITests/Pods-LoginFirebaseMVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2601723B29B17AFAC1DC1BE8 /* Pods-LoginFirebaseMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginFirebaseMVVM.debug.xcconfig"; path = "Target Support Files/Pods-LoginFirebaseMVVM/Pods-LoginFirebaseMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		2B746A5186A2548263D72C60 /* Pods_LoginFirebaseMVVMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginFirebaseMVVMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +132,7 @@
 		182C5FF822FAF56100B34763 /* LoginFirebaseMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				18F1967622FB13240084EB0D /* Helper */,
 				182C602D22FAF5D400B34763 /* Model */,
 				182C602C22FAF5CF00B34763 /* ViewModel */,
 				182C602B22FAF5C600B34763 /* View */,
@@ -164,6 +171,8 @@
 			children = (
 				182C602E22FAF5EE00B34763 /* LoginViewController.h */,
 				182C602F22FAF5EE00B34763 /* LoginViewController.m */,
+				188DA19922FB01F5003974C5 /* HomeViewController.h */,
+				188DA19A22FB01F5003974C5 /* HomeViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +193,15 @@
 				188DA19722FAFBB9003974C5 /* UserModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		18F1967622FB13240084EB0D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				18F1967722FB133C0084EB0D /* UserHelper.h */,
+				18F1967822FB133C0084EB0D /* UserHelper.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		23A2FEAE453D3F8C767B17CC /* Pods */ = {
@@ -433,8 +451,10 @@
 				182C603022FAF5EE00B34763 /* LoginViewController.m in Sources */,
 				188DA19822FAFBB9003974C5 /* UserModel.m in Sources */,
 				188DA19522FAFBAC003974C5 /* UserViewModel.m in Sources */,
+				18F1967922FB133C0084EB0D /* UserHelper.m in Sources */,
 				182C600922FAF56300B34763 /* main.m in Sources */,
 				182C5FFB22FAF56100B34763 /* AppDelegate.m in Sources */,
+				188DA19B22FB01F5003974C5 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

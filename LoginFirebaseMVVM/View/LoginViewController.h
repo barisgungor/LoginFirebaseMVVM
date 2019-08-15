@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) IBOutlet UITextField *textfieldUsername;
 @property (strong, nonatomic) IBOutlet UITextField *textfieldPassword;
+@property (strong, nonatomic) IBOutlet UILabel *infoLabel;
 
 - (IBAction)ClickLogin:(id)sender;
 

@@ -18,47 +18,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ei3-A2-t04">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ei3-A2-t04">
                                 <rect key="frame" x="20" y="84" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKU-rk-Kih">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gKU-rk-Kih">
                                 <rect key="frame" x="20" y="124" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-wc-8Pl">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kaa-wc-8Pl">
                                 <rect key="frame" x="150" y="184" width="114" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="ClickLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8T0-mK-97a"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvy-ha-bKA">
+                                <rect key="frame" x="20" y="823" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ei3-A2-t04" secondAttribute="trailing" constant="20" id="4nw-v4-z0q"/>
                             <constraint firstItem="gKU-rk-Kih" firstAttribute="top" secondItem="ei3-A2-t04" secondAttribute="bottom" constant="10" id="Dnt-W7-xyU"/>
+                            <constraint firstItem="Wvy-ha-bKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Igj-BU-V25"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kaa-wc-8Pl" secondAttribute="trailing" constant="150" id="JB5-OJ-V2w"/>
                             <constraint firstItem="ei3-A2-t04" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Pgj-Xr-Fij"/>
                             <constraint firstItem="Kaa-wc-8Pl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="UsT-s1-4tf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wvy-ha-bKA" secondAttribute="trailing" constant="20" id="W8B-PU-LsU"/>
+                            <constraint firstItem="Wvy-ha-bKA" firstAttribute="top" secondItem="Kaa-wc-8Pl" secondAttribute="bottom" constant="588" id="byc-7l-wBN"/>
                             <constraint firstItem="Kaa-wc-8Pl" firstAttribute="top" secondItem="gKU-rk-Kih" secondAttribute="bottom" constant="30" id="cIo-p9-CWM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gKU-rk-Kih" secondAttribute="trailing" constant="20" id="irc-WW-phH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wvy-ha-bKA" secondAttribute="bottom" constant="39" id="mrU-Hn-KuP"/>
                             <constraint firstItem="gKU-rk-Kih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rai-pC-PmD"/>
                             <constraint firstItem="ei3-A2-t04" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yUD-hi-3BH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="infoLabel" destination="Wvy-ha-bKA" id="kAE-vh-hwJ"/>
                         <outlet property="textfieldPassword" destination="gKU-rk-Kih" id="gRd-ED-cZ5"/>
                         <outlet property="textfieldUsername" destination="ei3-A2-t04" id="Xo0-5T-Iac"/>
+                        <segue destination="6Ja-zR-uIx" kind="show" identifier="showHomePage" id="GiO-Ha-0EF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="18.75"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="dQK-Q0-dpm">
+            <objects>
+                <viewController id="6Ja-zR-uIx" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4C-we-KCW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXT-zg-OdX">
+                                <rect key="frame" x="183" y="118" width="48" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Quit"/>
+                                <connections>
+                                    <action selector="logoutAction:" destination="6Ja-zR-uIx" eventType="touchUpInside" id="Wix-fn-sUw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QYC-mI-omN"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showLoginPage" id="qIj-6L-iXk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGp-Lb-sjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="19"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Quit" width="48" height="48"/>
+    </resources>
 </document>

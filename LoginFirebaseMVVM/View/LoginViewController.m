@@ -7,8 +7,14 @@
 //
 
 #import "LoginViewController.h"
+#import "UserViewModel.h"
+#import "HomeViewController.h"
 
 @interface LoginViewController ()
+
+@property (nonatomic) UserViewModel *userViewModel;
+@property (nonatomic) NSString *usernameText;
+@property (nonatomic) NSString *passwordText;
 
 @end
 
@@ -17,18 +23,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHomePage:) name:@"ViewModelUpdated" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateInfoLabel:) name:@"InfoLabelUpdated" object:nil];
+    
+    self.textfieldPassword.secureTextEntry = YES;
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) showHomePage:(NSNotification *)notification {
+    [self performSegueWithIdentifier:@"showHomePage" sender:nil];
 }
-*/
+
+-(void) updateInfoLabel:(NSNotification *)notification {
+    self.infoLabel.text = @"Kullanıcı Adı Yada Şifre Yanlış";
+}
 
 - (IBAction)ClickLogin:(id)sender {
+    self.usernameText = self.textfieldUsername.text;
+    NSLog(@"Username => %@",self.usernameText);
+    self.passwordText = self.textfieldPassword.text;
+    NSLog(@"Password => %@",self.passwordText);
+    
+    self.userViewModel = [[UserViewModel alloc] initWithUsernameText:self.usernameText passwordText:self.passwordText];
 }
+
 @end
