@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) IBOutlet UILabel *infoLabel;
 
 - (IBAction)ClickLogin:(id)sender;
+- (IBAction)clickRegister:(id)sender;
 
 @end
 

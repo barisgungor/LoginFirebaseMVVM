@@ -48,4 +48,8 @@
     self.userViewModel = [[UserViewModel alloc] initWithUsernameText:self.usernameText passwordText:self.passwordText];
 }
 
+- (IBAction)clickRegister:(id)sender {
+    [self performSegueWithIdentifier:@"showRegisterPage" sender:nil];
+}
+
 @end
