@@ -138,17 +138,72 @@
                                     <action selector="backAction:" destination="W5t-11-IS6" eventType="touchUpInside" id="uU9-dI-MYy"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="gro-Y3-V4A">
+                                <rect key="frame" x="20" y="214" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="b6M-zI-64o">
+                                <rect key="frame" x="20" y="174" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-Enter Passwrod" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="zNy-u1-ggM">
+                                <rect key="frame" x="20" y="254" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VB-Tm-UHC">
+                                <rect key="frame" x="150" y="309" width="114" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Register:" destination="W5t-11-IS6" eventType="touchUpInside" id="tuV-Re-rEg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNf-9x-dBM">
+                                <rect key="frame" x="20" y="816" width="374" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="2Q5-5v-Wd4"/>
+                                    <constraint firstAttribute="width" constant="374" id="WEz-t5-J6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hfO-Rb-vnZ" firstAttribute="bottom" secondItem="NNf-9x-dBM" secondAttribute="bottom" constant="20" id="2GA-gf-bG0"/>
+                            <constraint firstItem="zNy-u1-ggM" firstAttribute="top" secondItem="gro-Y3-V4A" secondAttribute="bottom" constant="10" id="6Au-kn-zLo"/>
+                            <constraint firstItem="gro-Y3-V4A" firstAttribute="top" secondItem="b6M-zI-64o" secondAttribute="bottom" constant="10" id="6Ez-et-0TO"/>
+                            <constraint firstItem="NNf-9x-dBM" firstAttribute="leading" secondItem="hfO-Rb-vnZ" secondAttribute="leading" constant="20" id="7fx-8Z-Tot"/>
+                            <constraint firstItem="1VB-Tm-UHC" firstAttribute="leading" secondItem="hfO-Rb-vnZ" secondAttribute="leading" constant="150" id="9zk-g6-Zvn"/>
+                            <constraint firstItem="hfO-Rb-vnZ" firstAttribute="trailing" secondItem="b6M-zI-64o" secondAttribute="trailing" constant="20" id="IED-XU-Wg5"/>
+                            <constraint firstItem="hfO-Rb-vnZ" firstAttribute="trailing" secondItem="NNf-9x-dBM" secondAttribute="trailing" constant="20" id="KEF-3i-Akf"/>
+                            <constraint firstItem="hfO-Rb-vnZ" firstAttribute="trailing" secondItem="1VB-Tm-UHC" secondAttribute="trailing" constant="150" id="PLH-6g-kr6"/>
+                            <constraint firstItem="gro-Y3-V4A" firstAttribute="leading" secondItem="hfO-Rb-vnZ" secondAttribute="leading" constant="20" id="QbX-Df-cmC"/>
                             <constraint firstItem="gUu-9N-Ete" firstAttribute="centerX" secondItem="qEd-He-rYj" secondAttribute="centerX" id="SPU-FB-uUK"/>
                             <constraint firstItem="WZP-oh-j0d" firstAttribute="top" secondItem="hfO-Rb-vnZ" secondAttribute="top" constant="20" id="Z8A-jr-Fui"/>
+                            <constraint firstItem="hfO-Rb-vnZ" firstAttribute="trailing" secondItem="zNy-u1-ggM" secondAttribute="trailing" constant="20" id="am0-Jb-4lq"/>
                             <constraint firstItem="WZP-oh-j0d" firstAttribute="leading" secondItem="hfO-Rb-vnZ" secondAttribute="leading" constant="20" id="bc6-DQ-uwU"/>
+                            <constraint firstItem="hfO-Rb-vnZ" firstAttribute="trailing" secondItem="gro-Y3-V4A" secondAttribute="trailing" constant="20" id="f7D-TU-26X"/>
+                            <constraint firstItem="b6M-zI-64o" firstAttribute="top" secondItem="gUu-9N-Ete" secondAttribute="bottom" constant="40" id="f7y-Kb-2mm"/>
+                            <constraint firstItem="NNf-9x-dBM" firstAttribute="top" secondItem="1VB-Tm-UHC" secondAttribute="bottom" constant="477" id="gXY-y5-Bpd"/>
+                            <constraint firstItem="zNy-u1-ggM" firstAttribute="leading" secondItem="hfO-Rb-vnZ" secondAttribute="leading" constant="20" id="gXg-ws-lvC"/>
                             <constraint firstItem="gUu-9N-Ete" firstAttribute="top" secondItem="hfO-Rb-vnZ" secondAttribute="top" constant="20" id="hpi-vO-rjy"/>
+                            <constraint firstItem="1VB-Tm-UHC" firstAttribute="top" secondItem="zNy-u1-ggM" secondAttribute="bottom" constant="25" id="v9Y-fe-0cz"/>
+                            <constraint firstItem="b6M-zI-64o" firstAttribute="leading" secondItem="hfO-Rb-vnZ" secondAttribute="leading" constant="20" id="zm3-tt-qw4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hfO-Rb-vnZ"/>
                     </view>
                     <connections>
+                        <outlet property="labelInfo" destination="NNf-9x-dBM" id="l9b-PT-Cv0"/>
+                        <outlet property="textfieldConfirmPassword" destination="zNy-u1-ggM" id="vMZ-F6-OgW"/>
+                        <outlet property="textfieldPassword" destination="gro-Y3-V4A" id="oQq-rc-dRh"/>
+                        <outlet property="textfieldUsername" destination="b6M-zI-64o" id="mPi-cp-6s2"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showLoginPage" id="jDH-2a-DXJ"/>
                     </connections>
                 </viewController>

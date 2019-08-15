@@ -22,4 +22,7 @@
 - (IBAction)backAction:(id)sender {
     [self performSegueWithIdentifier:@"showLoginPage" sender:nil];
 }
+
+- (IBAction)Register:(id)sender {
+}
 @end

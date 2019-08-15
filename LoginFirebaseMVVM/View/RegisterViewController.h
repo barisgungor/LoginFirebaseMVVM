@@ -12,7 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RegisterViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *textfieldUsername;
+@property (strong, nonatomic) IBOutlet UITextField *textfieldPassword;
+@property (strong, nonatomic) IBOutlet UITextField *textfieldConfirmPassword;
+@property (strong, nonatomic) IBOutlet UILabel *labelInfo;
+
 - (IBAction)backAction:(id)sender;
+- (IBAction)Register:(id)sender;
 
 @end
 
